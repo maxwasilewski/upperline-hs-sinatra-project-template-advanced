@@ -8,6 +8,21 @@
 /*	height:175px;*/
 /*}*/
 
+p {
+	font-family: Arial;
+	font-weight:bold;
+	
+}
+
+h1 {
+	font-weight:bold;
+
+}
+
+h2 {
+	font-weight:bold;
+}
+
 .row2 {
 	color:black;
 }
@@ -30,7 +45,7 @@ table{
 }
 
 .table_container{
-  
+  color:grey;
 }
 td{
 	font-family: "Times New Roman";
@@ -161,4 +176,10 @@ transform:translatey(0);
 .hovereffect:hover a.info {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+
+
+.center_text{
+	margin-left: 41%;
+	color: white;
 }

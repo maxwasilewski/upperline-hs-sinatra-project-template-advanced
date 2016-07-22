@@ -16,11 +16,12 @@ def make_api_call(request_string)
     uri = URI(request_string) #open portal for app
     response = Net::HTTP.get(uri) #go get data
     formatted_data = JSON.parse(response) #turn data into something our app understands, a hash
-    formatted_data
-    vid_id = formatted_data["items"][0]["id"]["videoId"]
-    video_name = formatted_data["items"][0]["snippet"]["title"]
-    channel_name = formatted_data["items"][0]["channelTitle"]
-    return final_array = [vid_id, video_name, channel_name]
+    vid_id0= formatted_data["items"][0]["id"]["videoId"]
+    vid_id1 = formatted_data["items"][1]["id"]["videoId"]
+    vid_id2 = formatted_data["items"][2]["id"]["videoId"]
+    vid_id3 = formatted_data["items"][3]["id"]["videoId"]
+    vid_id4 = formatted_data["items"][4]["id"]["videoId"]
+    return final_array = [vid_id0, vid_id1, vid_id2, vid_id3, vid_id4]
 end
  
 
