@@ -1,0 +1,394 @@
+<!-- The purpose of this base.erb is that it provides a layout that you can use for EVERY page. -->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title><%=@title%></title>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
+  <!-- Latest compiled and minified CSS -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+  <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <div class="container">-->
+<!--    <h1></h1>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--  </div>-->
+  <!-- EVERYTHING ABOVE THIS IS TEMPLATED -->
+<!--  <div class="container">-->
+<!--  <%=yield%> <!-- THIS IS WHERE OTHER PAGES' INFO GOES -->-->
+  <!-- EVERYTHING BELOW THIS IS TEMPLATED -->
+<!--  </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!-- List of all countries-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><%=@title%></title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="background-image: url('images/background.jpg')">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Map2Music</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <!--<div class="container">-->
+
+    <!--    <div class="row">-->
+
+    <!--        <div class="col-lg-12">-->
+    <!--            <h1 class="page-header">Select a Country</h1>-->
+    <!--        </div>-->
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="table_container">
+            <table>
+    	        <tbody>
+        	        <thead>
+        	            <th colspan="3"></th>
+        	        </thead>
+        	        <tr>
+        	            <td  class="picture-cell" >
+        	                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/brazil.png" name="brazil" alt="">
+                                <div class="overlay">
+                                   <h2>Brazil</h2>
+                                   <a class="info" href='/brazil'>Play</a>
+                                </div>
+                            </div>
+                        </div>
+        	            </td>
+        	               <!--<a href='/brazil'><img  src="images/brazil.png" name="brazil" class="pop image"/></a>-->
+        	                <!--<p>Brazil</p>-->
+        	           	<td  class="picture-cell" >
+        	           	   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/south_korea.png" name="south korea" alt="">
+                                <div class="overlay">
+                                   <h2>South Korea</h2>
+                                   <a class="info" href='/southkorea'>Play</a>
+                                </div>
+                            </div>
+                        </div>
+        	           	</td>
+        	           	 <!--<a href='/southkorea'><img  src="images/south_korea.png"name="south_korea" class="pop image"/></a>
+        	           	    <p>South Korea</p>-->
+        	            <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/jamaica.gif" name="jamaica" alt="">
+                                <div class="overlay">
+                                   <h2>Jamaica</h2>
+                                   <a class="info" href='/jamaica'>Play</a>
+                                </div>
+                            </div>
+                        </div>
+        	                <!--<a href='/jamaica'><img  src="images/jamaica.png" name="jamaica" class="pop image"/></a>
+        	                <p>Jamaica</p>-->
+        	            </td>
+        	            <td id="gimme-border" class="picture-cell" >
+        	                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/egypt.gif" name="egypt" alt="">
+                                <div class="overlay">
+                                   <h2>Egypt</h2>
+                                   <a class="info" href='/egypt'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/egypt'><img  src="images/egypt.gif" name="egypt" class="pop image"/></a>
+        	                <p>Egypt</p>-->
+        	           </td>
+        	       </tr>
+        	       <tr>
+        	          	 <td  class="picture-cell" >
+        	                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/uae.png" name="united arab emirates" alt="">
+                                <div class="overlay">
+                                   <h2>UAE</h2>
+                                   <a class="info" href='/uae'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/uae'><img  src="images/uae.png" name="united arab emirates" class="pop image"/></a>
+        	                <p>United Arab Emirates</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/Saudi_Arabia.jpg" name="saudi arabia" alt="">
+                                <div class="overlay">
+                                   <h2>Saudi Arabia</h2>
+                                   <a class="info" href='/saudiarabia'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/saudiarabia'><img  src="images/Saudi_Arabia.jpg"name="saudi arabia" class="pop image"/></a>
+        	                <p>Saudi Arabia</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/russia.jpg" name="russia" alt="">
+                                <div class="overlay">
+                                   <h2>Russia</h2>
+                                   <a class="info" href='/russia'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/russia'><img  src="images/russia.jpg" name="russia" class="pop image"/></a>
+        	                <p>Russia</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/morocco.gif" name="morocco" alt="">
+                                <div class="overlay">
+                                   <h2>Morocco</h2>
+                                   <a class="info" href='/morocco'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/morocco'><img  src="images/morocco.gif" name="morocco" class="pop image"/></a>
+        	                <p>Morocco</p>-->
+        	           </td>
+        	       </tr>
+        	       <tr>
+        	          	 <td  class="picture-cell" >
+        	          	     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/mexico.jpg" name="mexico" alt="">
+                                <div class="overlay">
+                                   <h2>Mexico</h2>
+                                   <a class="info" href='/mexico'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/mexico'><img  src="images/mexico.jpg" name="mexico" class="pop image"/></a>
+        	                <p>Mexico</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/britain.png" name="britain" alt="">
+                                <div class="overlay">
+                                   <h2>Britain</h2>
+                                   <a class="info" href='/britain'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/britain'><img  src="images/britain.svg" name="britain" class="pop image"/></a>
+        	                <p>Britain</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/germany.png" name="germany" alt="">
+                                <div class="overlay">
+                                   <h2>Germany</h2>
+                                   <a class="info" href='/germany'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/germany'><img  src="images/germany.png" name="germany" class="pop image"/></a>
+        	                <p>Germany</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/turkey.gif" name="turkey" alt="">
+                                <div class="overlay">
+                                   <h2>Turkey</h2>
+                                   <a class="info" href='/turkey'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/turkey'><img  src="images/turkey.gif" name="turkey" class="pop image"/></a>
+        	                <p>Turkey</p>-->
+        	           </td>
+        	       </tr>
+        	       <tr>
+        	          	 <td  class="picture-cell" >
+        	          	     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/china.gif" name="china" alt="">
+                                <div class="overlay">
+                                   <h2>China</h2>
+                                   <a class="info" href='/china'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/china'><img  src="images/china.gif" name="china" class="pop image"/></a>
+        	                <p>China</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/spain.gif" name="spain" alt="">
+                                <div class="overlay">
+                                   <h2>Spain</h2>
+                                   <a class="info" href='/spain'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/spain'><img  src="images/spain.jpg" name="spain" class="pop image"/></a>
+        	                <p>Spain</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/france.gif" name="france" alt="">
+                                <div class="overlay">
+                                   <h2>France</h2>
+                                   <a class="info" href='/france'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/france'><img  src="images/france.gif" name="france" class="pop image"/></a>
+        	                <p>France</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/south-africa.jpg" name="south africa" alt="">
+                                <div class="overlay">
+                                   <h2>South Africa</h2>
+                                   <a class="info" href='/southafrica'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/southafrica'><img  src="images/south-africa.jpg" name="south africa" class="pop image"/></a>
+        	                <p>South Africa</p>-->
+        	           </td>
+        	       </tr>
+        	       <tr>
+        	          	 <td  class="picture-cell" >
+        	          	     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/india.gif" name="india" alt="">
+                                <div class="overlay">
+                                   <h2>India</h2>
+                                   <a class="info" href='/india'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/india'><img  src="images/india.gif" name="india" class="pop image"/></a>
+        	                <p>India</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/venezuela.png" name="venezuela" alt="">
+                                <div class="overlay">
+                                   <h2>Venezuela</h2>
+                                   <a class="info" href='/venezuela'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/venezuela'><img  src="images/venezuela.png" name="venezuela" class="pop image"/></a>
+        	                <p>Venezuela</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/italy.gif" name="italy" alt="">
+                                <div class="overlay">
+                                   <h2>Italy</h2>
+                                   <a class="info" href='/italy'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/italy'><img  src="images/italy.gif" name="italy" class="pop image"/></a>
+        	                <p>Italy</p>-->
+        	           </td>
+        	           <td  class="picture-cell" >
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/USAFlag.gif" name="america" alt="">
+                                <div class="overlay">
+                                   <h2>USA</h2>
+                                   <a class="info" href='/unitedstates'>Play</a>
+                                </div>
+                            </div>
+        	                <!--<a href='/unitedstates'><img  src="images/USAFlag.gif" name="america" class="pop image"/></a>
+        	                <p>United States of America</p>-->
+        	           </td>
+        	       </tr>
+        	        
+        	        
+        	        
+        	        
+    	        </tbody>
+    	    </table>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row2">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Map2Music 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
