@@ -8,13 +8,19 @@
 /*	height:175px;*/
 /*}*/
 
-
+.row2 {
+	color:black;
+}
 body{
   margin:auto;
   
 }
 .navbar-brand{
 	font-family: "Times New Roman";
+}
+.video-container{
+	margin: 0 auto;
+	margin-left: 14%;
 }
 
 table{
@@ -37,33 +43,37 @@ tr{
 
 }
 
-
+/*img{*/
+/*	width: 2000px; !important*/
+/*	height: 2000px; !important*/
+/*}*/
 
 .img_size{
-	width: 250px !important;
+	width: 275px !important;
 	
 }
 
+
 /*.image{*/
 /*  width:250px;*/
-/*}*/
+/*}s*/
 .picture-cell{
  border: solid black 1px;
-	width:200px;
-	height:200px;
-	padding: 15px;
+	width:275px;
+	height:275px;
+	/*padding: 10px;*/
 }
 
 tr {
-  background-color:#99ddff;
+  background-color:white;
   color:white;
 }
 
-.pop:hover {
-	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);
-	opacity: 1;
-	filter: alpha(opacity=30);
-}
+/*.pop:hover {*/
+/*	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);*/
+/*	opacity: 1;*/
+/*	filter: alpha(opacity=30);*/
+/*}*/
 
 .hovereffect {
 width:100%;

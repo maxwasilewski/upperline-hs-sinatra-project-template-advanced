@@ -2,7 +2,7 @@
 <!--<!DOCTYPE html>-->
 <!--<html>-->
 <!--<head>-->
-<!--  <title><%=@title%></title>-->
+<%=@title%>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
   <!-- Latest compiled and minified CSS -->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
@@ -18,7 +18,10 @@
 <!--  </div>-->
   <!-- EVERYTHING ABOVE THIS IS TEMPLATED -->
 <!--  <div class="container">-->
-<!--  <%=yield%> <!-- THIS IS WHERE OTHER PAGES' INFO GOES -->-->
+
+<%=yield%> 
+
+<!-- THIS IS WHERE OTHER PAGES' INFO GOES -->
   <!-- EVERYTHING BELOW THIS IS TEMPLATED -->
 <!--  </div>-->
 <!--</body>-->
@@ -63,7 +66,7 @@
 <body style="background-image: url('images/background.jpg')">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top height_forced" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -73,33 +76,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Map2Music</a>
+                <a class="navbar-brand" href="/">Map2Music</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <!--<div class="container">-->
-
-    <!--    <div class="row">-->
-
-    <!--        <div class="col-lg-12">-->
-    <!--            <h1 class="page-header">Select a Country</h1>-->
-    <!--        </div>-->
-
+    
 
         <br>
         <br>
         <br>
+        
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <div class="table_container">
             <table>
     	        <tbody>
@@ -107,6 +98,7 @@
         	            <th colspan="3"></th>
         	        </thead>
         	        <tr>
+        	            
         	            <td  class="picture-cell" >
         	                
                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -119,8 +111,7 @@
                             </div>
                         </div>
         	            </td>
-        	               <!--<a href='/brazil'><img  src="images/brazil.png" name="brazil" class="pop image"/></a>-->
-        	                <!--<p>Brazil</p>-->
+        	               
         	           	<td  class="picture-cell" >
         	           	   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
                             <div class="hovereffect">
@@ -132,8 +123,7 @@
                             </div>
                         </div>
         	           	</td>
-        	           	 <!--<a href='/southkorea'><img  src="images/south_korea.png"name="south_korea" class="pop image"/></a>
-        	           	    <p>South Korea</p>-->
+        	           	 
         	            <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
                             <div class="hovereffect">
@@ -144,8 +134,7 @@
                                 </div>
                             </div>
                         </div>
-        	                <!--<a href='/jamaica'><img  src="images/jamaica.png" name="jamaica" class="pop image"/></a>
-        	                <p>Jamaica</p>-->
+        	                
         	            </td>
         	            <td id="gimme-border" class="picture-cell" >
         	                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -156,8 +145,7 @@
                                    <a class="info" href='/egypt'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/egypt'><img  src="images/egypt.gif" name="egypt" class="pop image"/></a>
-        	                <p>Egypt</p>-->
+        	                
         	           </td>
         	       </tr>
         	       <tr>
@@ -170,8 +158,7 @@
                                    <a class="info" href='/uae'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/uae'><img  src="images/uae.png" name="united arab emirates" class="pop image"/></a>
-        	                <p>United Arab Emirates</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -182,8 +169,7 @@
                                    <a class="info" href='/saudiarabia'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/saudiarabia'><img  src="images/Saudi_Arabia.jpg"name="saudi arabia" class="pop image"/></a>
-        	                <p>Saudi Arabia</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -194,8 +180,7 @@
                                    <a class="info" href='/russia'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/russia'><img  src="images/russia.jpg" name="russia" class="pop image"/></a>
-        	                <p>Russia</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -206,8 +191,7 @@
                                    <a class="info" href='/morocco'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/morocco'><img  src="images/morocco.gif" name="morocco" class="pop image"/></a>
-        	                <p>Morocco</p>-->
+        	                
         	           </td>
         	       </tr>
         	       <tr>
@@ -220,20 +204,18 @@
                                    <a class="info" href='/mexico'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/mexico'><img  src="images/mexico.jpg" name="mexico" class="pop image"/></a>
-        	                <p>Mexico</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
-        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
+        	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size image">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="images/britain.png" name="britain" alt="">
+                                <img class="img-responsive image" src="images/britain.png" name="britain" alt="">
                                 <div class="overlay">
                                    <h2>Britain</h2>
                                    <a class="info" href='/britain'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/britain'><img  src="images/britain.svg" name="britain" class="pop image"/></a>
-        	                <p>Britain</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -244,8 +226,7 @@
                                    <a class="info" href='/germany'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/germany'><img  src="images/germany.png" name="germany" class="pop image"/></a>
-        	                <p>Germany</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -256,8 +237,7 @@
                                    <a class="info" href='/turkey'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/turkey'><img  src="images/turkey.gif" name="turkey" class="pop image"/></a>
-        	                <p>Turkey</p>-->
+        	                
         	           </td>
         	       </tr>
         	       <tr>
@@ -282,8 +262,7 @@
                                    <a class="info" href='/spain'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/spain'><img  src="images/spain.jpg" name="spain" class="pop image"/></a>
-        	                <p>Spain</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -294,8 +273,7 @@
                                    <a class="info" href='/france'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/france'><img  src="images/france.gif" name="france" class="pop image"/></a>
-        	                <p>France</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -306,8 +284,7 @@
                                    <a class="info" href='/southafrica'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/southafrica'><img  src="images/south-africa.jpg" name="south africa" class="pop image"/></a>
-        	                <p>South Africa</p>-->
+        	                
         	           </td>
         	       </tr>
         	       <tr>
@@ -320,8 +297,7 @@
                                    <a class="info" href='/india'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/india'><img  src="images/india.gif" name="india" class="pop image"/></a>
-        	                <p>India</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -332,9 +308,7 @@
                                    <a class="info" href='/venezuela'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/venezuela'><img  src="images/venezuela.png" name="venezuela" class="pop image"/></a>
-        	                <p>Venezuela</p>-->
-        	           </td>
+        	               
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
                             <div class="hovereffect">
@@ -344,8 +318,7 @@
                                    <a class="info" href='/italy'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/italy'><img  src="images/italy.gif" name="italy" class="pop image"/></a>
-        	                <p>Italy</p>-->
+        	                
         	           </td>
         	           <td  class="picture-cell" >
         	               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img_size">
@@ -356,11 +329,9 @@
                                    <a class="info" href='/unitedstates'>Play</a>
                                 </div>
                             </div>
-        	                <!--<a href='/unitedstates'><img  src="images/USAFlag.gif" name="america" class="pop image"/></a>
-        	                <p>United States of America</p>-->
         	           </td>
         	       </tr>
-        	        
+        	       
         	        
         	        
         	        
